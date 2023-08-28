@@ -18,7 +18,7 @@ export default function RootLayout(props) {
         <html lang='en'>
             <body>
                 <Navbar />
-                <Box sx={{ bgcolor: '#14193B' }}>
+                <Box>
                     <ThemeRegistry options={{ key: 'mui' }}>{children}</ThemeRegistry>
                 </Box>
             </body>

@@ -14,6 +14,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Link from 'next/link';
 
 const pages = ['About', 'Documentation', 'Get Started'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -38,10 +39,11 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar sx={{ bgcolor: '#8A4EEE' }} position='static'>
+        <AppBar className='appbar' position='static'>
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    {/* Smaller screens */}
                     <Typography
                         variant='h6'
                         noWrap
@@ -59,73 +61,25 @@ function ResponsiveAppBar() {
                     >
                         Event Organizer
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                        <IconButton
-                            size='large'
-                            aria-label='account of current user'
-                            aria-controls='menu-appbar'
-                            aria-haspopup='true'
-                            onClick={handleOpenNavMenu}
-                            color='inherit'
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Menu
-                            id='menu-appbar'
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign='center'>{page}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </Box>
                     <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                        <Button href='/docs' sx={{ my: 2, color: 'white', display: 'block' }}>
+                            Docs
+                        </Button>
+                        <Button href='/setup' sx={{ my: 2, color: 'white', display: 'block' }}>
+                            Setup
+                        </Button>
+                    </Box>
 
-                    {/* Smaller screens */}
-                    <Typography
-                        variant='h5'
-                        noWrap
-                        component='a'
-                        href='/'
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        LOGO
-                    </Typography>
+                    {/* Bigger screens */}
+
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
-                            </Button>
-                        ))}
+                        <Button href='/docs' sx={{ my: 2, color: 'white', display: 'block' }}>
+                            Docs
+                        </Button>
+                        <Button href='/setup' sx={{ my: 2, color: 'white', display: 'block' }}>
+                            Setup
+                        </Button>
                     </Box>
                 </Toolbar>
             </Container>
