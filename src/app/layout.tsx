@@ -18,7 +18,7 @@ export default function RootLayout(props) {
         <html lang='en'>
             <body>
                 <Navbar />
-                <Box>
+                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                     <ThemeRegistry options={{ key: 'mui' }}>{children}</ThemeRegistry>
                 </Box>
             </body>
