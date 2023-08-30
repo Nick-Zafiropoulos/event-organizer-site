@@ -111,6 +111,17 @@ a {
     background-color: rgb(228 228 228 / 15%);
 }
 
+.frosted-divider {
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    border-top: 2px solid rgba(130, 130, 130, 0.3);
+    /* border-left: 1px solid rgba(130, 130, 130, 0.1); */
+    border-right: 1px solid rgba(130, 130, 130, 0.1);
+    box-shadow: 0px 5px 5px 5px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 15%);
+}
+
 .appbar {
     background-color: #000;
 }
@@ -126,4 +137,14 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
+}
+
+.eoImages {
+    border-radius: 6px;
+}
+
+.divider-glass {
+    width: 70%;
+    height: 3px;
+    margin: auto;
 }
