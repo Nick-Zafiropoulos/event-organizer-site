@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import ThemeRegistry from '@/theme/ThemeRegistry';
 import Navbar from '../components/Navbar';
+import Navhead from '../components/Navhead';
 import Box from '@mui/material/Box';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -14,9 +15,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props) {
     const { children } = props;
+
     return (
         <html lang='en'>
             <body>
+                {/* <Navbar sx={{ backgroundColor: '#000' }} /> */}
                 <Navbar />
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                     <ThemeRegistry options={{ key: 'mui' }}>{children}</ThemeRegistry>

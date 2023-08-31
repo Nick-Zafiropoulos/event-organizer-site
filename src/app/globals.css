@@ -148,3 +148,11 @@ a {
     height: 3px;
     margin: auto;
 }
+
+.headcss {
+    background-color: #000;
+}
+
+.navFont {
+    font-family: Arial, Helvetica, sans-serif;
+}

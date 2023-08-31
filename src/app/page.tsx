@@ -131,7 +131,7 @@ export default function Home() {
                             1.
                         </Typography>
                         <Typography align='left' sx={{ fontSize: { xs: '100%', md: '25px' }, mt: 5 }}>
-                            Simply use the /poll command to customize the event poll to your liking.
+                            Use the /poll command to customize the event poll to your liking.
                         </Typography>
                     </Box>
                 </Box>

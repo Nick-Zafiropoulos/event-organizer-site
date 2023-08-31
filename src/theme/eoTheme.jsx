@@ -9,7 +9,7 @@ const roboto = Roboto({
 
 const theme = createTheme({
     palette: {
-        mode: 'light',
+        mode: 'dark',
     },
     typography: {
         fontFamily: roboto.style.fontFamily,
@@ -19,7 +19,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: ({ ownerState }) => ({
                     ...(ownerState.severity === 'info' && {
-                        backgroundColor: '#60a5fa',
+                        backgroundColor: '#000',
                     }),
                 }),
             },
