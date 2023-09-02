@@ -1,14 +1,14 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
-function Navbar() {
+function Navhead() {
     return (
         <Box className='headcss' sx={{ display: 'flex', justifyContent: 'left', p: 1.5 }}>
-            <Button sx={{ fontFamily: 'monospace' }} variant='text'>
-                Text
+            <Button sx={{ fontFamily: 'roboto' }} variant='text'>
+                Test Navbar
             </Button>
         </Box>
     );
 }
 
-export default Navbar;
+export default Navhead;
