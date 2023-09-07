@@ -14,12 +14,16 @@ To view the code for Event Organizer:
 
 
 
-![typescript-svgrepo-com](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/756f52f7-8b6d-4a2e-ba0c-02a0109323c7)
-![nextjs-fill-svgrepo-com](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/6a36aad4-817a-4aa6-b213-6ff3c564cf3d)
+
+
+
+![icons8-typescript](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/119d1ce4-7f46-4481-86e6-26e14b4bac45)
+![icons8-nextjs](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/774c4143-28e9-4e02-a543-6870f5764291)
 ![react-dark](https://user-images.githubusercontent.com/102330367/221290916-6d91e457-3086-4a56-b161-d83c7d2536c3.svg)
 ![html](https://user-images.githubusercontent.com/102330367/221290935-b9645ebc-4c1c-4975-bff7-81e677190082.svg)
 ![css](https://user-images.githubusercontent.com/102330367/221290945-3a601c4f-4008-4954-b0e5-d282f02f201f.svg)
 
 Typescript, Next.js, React, HTML, CSS
+
 
 
