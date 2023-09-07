@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
 
-## Getting Started
+This repo contains the code for the Event Organizer information website. Event Organizer is a scheduler for Discord that allows a user to poll other users for their availability and automatically creates events based on the result of the poll.
 
-First, run the development server:
+The website is still under construction and therefore is not a completed project as of yet, please check back for updates as aspects of the website are completed and the site goes live.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+To view the code for Event Organizer: 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<a href="https://github.com/Nick-Zafiropoulos/discord-event-organizer">
+    <img width="240px" alt="Discord Event Organizer" title="Go to Event Organizer" src="https://custom-icon-badges.demolab.com/badge/-Go%20to%20Event%20Organizer-green?style=for-the-badge&logoColor=white&logo=sign-in"/></a>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ 
+## Languages and Tools
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+![typescript-svgrepo-com](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/756f52f7-8b6d-4a2e-ba0c-02a0109323c7)
+![nextjs-fill-svgrepo-com](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/6a36aad4-817a-4aa6-b213-6ff3c564cf3d)
+![react-dark](https://user-images.githubusercontent.com/102330367/221290916-6d91e457-3086-4a56-b161-d83c7d2536c3.svg)
+![html](https://user-images.githubusercontent.com/102330367/221290935-b9645ebc-4c1c-4975-bff7-81e677190082.svg)
+![css](https://user-images.githubusercontent.com/102330367/221290945-3a601c4f-4008-4954-b0e5-d282f02f201f.svg)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Typescript, Next.js, React, HTML, CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
