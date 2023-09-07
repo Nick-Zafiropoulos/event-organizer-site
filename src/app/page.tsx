@@ -14,12 +14,44 @@ export default function Home() {
             className='backgroundClass'
             sx={{ height: { xs: '200vw', md: '100%' }, width: { xs: 'cover', md: '100%' }, p: { xs: 2, md: 10 } }}
         >
-            <Box sx={{ display: 'flex' }}>
+            <Box
+                component={motion.div}
+                initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                transition={{ duration: 0.6, delay: 0.1, ease: [0, 0.71, 0.2, 1.01] }}
+                animate={{ x: '0%', y: '0%', opacity: 1 }}
+                sx={{ display: 'flex' }}
+            >
                 <Box sx={{ flexGrow: 1 }}>
                     <Typography
                         className='statement'
                         sx={{
                             fontSize: { xs: '100%', md: '55px' },
+
+                            flexWrap: 'wrap',
+                            width: '70%',
+
+                            mt: 5,
+                            ml: { xs: 2, md: 15 },
+                        }}
+                    >
+                        Meet the Discord Event Organizer
+                    </Typography>
+                </Box>
+                <Box sx={{ flexGrow: 1 }}></Box>
+            </Box>
+
+            <Box
+                component={motion.div}
+                initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                transition={{ duration: 0.7, delay: 0.2, ease: [0, 0.71, 0.2, 1.01] }}
+                animate={{ x: '0%', y: '0%', opacity: 1 }}
+                sx={{ display: 'flex' }}
+            >
+                <Box sx={{ flexGrow: 1 }}>
+                    <Typography
+                        className='statement'
+                        sx={{
+                            fontSize: { xs: '100%', md: '30px' },
 
                             flexWrap: 'wrap',
                             width: '50%',
@@ -29,7 +61,7 @@ export default function Home() {
                         }}
                     >
                         Scheduling meetups on Discord just got a lot easier.
-                    </Typography>{' '}
+                    </Typography>
                 </Box>
                 <Box sx={{ flexGrow: 1 }}></Box>
             </Box>
@@ -38,11 +70,11 @@ export default function Home() {
                     sx={{ width: '30%', m: 5 }}
                     component={motion.div}
                     className='statement'
-                    initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.5 }}
-                    animate={{ x: '0%', y: '0%', opacity: 1, scale: 1 }}
+                    initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                    animate={{ x: '0%', y: '0%', opacity: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.5,
+                        duration: 1,
+                        delay: 0.3,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
@@ -55,11 +87,11 @@ export default function Home() {
                     sx={{ display: 'flex', justifyContent: 'center', p: 5 }}
                     component={motion.div}
                     className='frosted'
-                    initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.5 }}
-                    animate={{ x: '0%', y: '0%', opacity: 1, scale: 1 }}
+                    initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                    animate={{ x: '0%', y: '0%', opacity: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.5,
+                        duration: 1,
+                        delay: 0.3,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
@@ -87,13 +119,17 @@ export default function Home() {
                 initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.5 }}
                 animate={{ x: '0%', y: '0%', opacity: 1, scale: 1 }}
                 transition={{
-                    duration: 0.8,
-                    delay: 0.5,
+                    duration: 1,
+                    delay: 0.4,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}
             ></Box>
             <Typography
                 className='statement'
+                component={motion.div}
+                initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                transition={{ duration: 1, delay: 0.7, ease: [0, 0.71, 0.2, 1.01] }}
+                animate={{ x: '0%', y: '0%', opacity: 1 }}
                 sx={{
                     fontSize: { xs: '100%', md: '40px' },
 
@@ -131,7 +167,7 @@ export default function Home() {
                             1.
                         </Typography>
                         <Typography align='left' sx={{ fontSize: { xs: '100%', md: '25px' }, mt: 5 }}>
-                            Use the /poll command to customize the event poll to your liking.
+                            Use the /poll command to customize the event poll to your needs.
                         </Typography>
                     </Box>
                 </Box>
