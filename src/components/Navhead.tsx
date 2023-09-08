@@ -25,10 +25,26 @@ function Navhead() {
                 <Box sx={{ display: 'flex', justifyContent: 'left', pl: 5 }}>
                     <img className='logo' src='/EventOrganizerLogo.png' />
 
-                    <Button sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white', ml: 3 }} variant='text'>
+                    <Button
+                        href='/'
+                        sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white', ml: 2 }}
+                        variant='text'
+                    >
+                        Event Organizer
+                    </Button>
+
+                    <Button
+                        href='/docs'
+                        sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white', ml: 3 }}
+                        variant='text'
+                    >
                         DOCS
                     </Button>
-                    <Button sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white' }} variant='text'>
+                    <Button
+                        href='/setup'
+                        sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white' }}
+                        variant='text'
+                    >
                         SETUP
                     </Button>
                 </Box>

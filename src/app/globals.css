@@ -139,6 +139,20 @@ a {
     max-width: 1920px;
 }
 
+.backgroundClassSetup {
+    background: url('../images/eventorganizer2ndpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+}
+
+.backgroundClassDocs {
+    background: url('../images/eventorganizer3rdpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+}
+
 .eoImages {
     border-radius: 6px;
 }
