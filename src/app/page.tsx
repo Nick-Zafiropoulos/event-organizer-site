@@ -7,6 +7,7 @@ import { useAnimate } from 'framer-motion';
 import { Typography } from '@mui/material';
 import testbg from '../images/testbg.jpeg';
 import exampleimg from '../images/testpollimg.jpg';
+import { IndicatorLine } from './../components/IndicatorLine';
 
 export default function Home() {
     return (
@@ -65,6 +66,7 @@ export default function Home() {
                 </Box>
                 <Box sx={{ flexGrow: 1 }}></Box>
             </Box>
+
             <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
                 <Box
                     sx={{ width: '30%', m: 5 }}
@@ -78,10 +80,24 @@ export default function Home() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <Typography align='center' sx={{ p: 0, mt: 10, fontSize: { xs: '100%', md: '25px' } }}>
+                    <Typography align='left' sx={{ p: 0, mt: 10, ml: 5, fontSize: { xs: '100%', md: '25px' } }}>
                         Use Event Organizer to choose the right date and time for your next get-together by polling your
                         server members.
                     </Typography>
+                    <Box
+                        sx={{ display: 'flex' }}
+                        component={motion.div}
+                        className='statement'
+                        initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                        animate={{ x: '0%', y: '0%', opacity: 1 }}
+                        transition={{
+                            duration: 1,
+                            delay: 0.3,
+                            ease: [0, 0.71, 0.2, 1.01],
+                        }}
+                    >
+                        <IndicatorLine />
+                    </Box>
                 </Box>
                 <Box
                     sx={{ display: 'flex', justifyContent: 'center', p: 5 }}
@@ -140,7 +156,7 @@ export default function Home() {
                     ml: { xs: 2, md: 15 },
                 }}
             >
-                Its as easy as...
+                Here's how it works:
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'space-around', mt: 15 }}>
                 <Box
@@ -169,6 +185,20 @@ export default function Home() {
                         <Typography align='left' sx={{ fontSize: { xs: '100%', md: '25px' }, mt: 5 }}>
                             Use the /poll command to customize the event poll to your needs.
                         </Typography>
+                    </Box>
+                    <Box
+                        sx={{ display: 'flex' }}
+                        component={motion.div}
+                        className='statement'
+                        initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                        animate={{ x: '0%', y: '0%', opacity: 1 }}
+                        transition={{
+                            duration: 1,
+                            delay: 0.3,
+                            ease: [0, 0.71, 0.2, 1.01],
+                        }}
+                    >
+                        <IndicatorLine />
                     </Box>
                 </Box>
                 <Box
@@ -233,6 +263,20 @@ export default function Home() {
                             Server members react to the poll to indicate their availability.
                         </Typography>
                     </Box>
+                    <Box
+                        sx={{ display: 'flex' }}
+                        component={motion.div}
+                        className='statement'
+                        initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                        animate={{ x: '0%', y: '0%', opacity: 1 }}
+                        transition={{
+                            duration: 1,
+                            delay: 0.3,
+                            ease: [0, 0.71, 0.2, 1.01],
+                        }}
+                    >
+                        <IndicatorLine />
+                    </Box>
                 </Box>
                 <Box
                     sx={{ display: 'flex', justifyContent: 'center', p: 5 }}
@@ -280,6 +324,20 @@ export default function Home() {
                             The winning choice of your poll is automatically converted to an event for your discord
                             server. No extra work required!
                         </Typography>
+                    </Box>
+                    <Box
+                        sx={{ display: 'flex' }}
+                        component={motion.div}
+                        className='statement'
+                        initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                        animate={{ x: '0%', y: '0%', opacity: 1 }}
+                        transition={{
+                            duration: 1,
+                            delay: 0.3,
+                            ease: [0, 0.71, 0.2, 1.01],
+                        }}
+                    >
+                        <IndicatorLine />
                     </Box>
                 </Box>
                 <Box

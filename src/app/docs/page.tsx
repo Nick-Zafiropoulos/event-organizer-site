@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import { motion } from 'framer-motion';
 import { useAnimate } from 'framer-motion';
 import { Typography } from '@mui/material';
+import { Example } from '../../components/Example';
 
 export default function Docs() {
     return (
