@@ -100,7 +100,7 @@ export default function Home() {
                     </Box>
                 </Box>
                 <Box
-                    sx={{ display: 'flex', justifyContent: 'center', p: 5 }}
+                    sx={{ display: 'flex', justifyContent: 'center', p: 5, mt: 4 }}
                     component={motion.div}
                     className='frosted'
                     initial={{ x: '0%', y: '-10%', opacity: 0 }}
@@ -158,9 +158,9 @@ export default function Home() {
             >
                 Here's how it works:
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'space-around', mt: 15 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }}>
                 <Box
-                    sx={{ width: '30%', m: 5 }}
+                    sx={{ width: '40%', m: 5, ml: 10, mr: 20 }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.5 }}
@@ -178,6 +178,7 @@ export default function Home() {
                                 fontSize: { xs: '100%', md: '60px' },
                                 mr: 5,
                                 mt: 5,
+                                ml: 5,
                             }}
                         >
                             1.
@@ -235,9 +236,9 @@ export default function Home() {
                 </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', justifyContent: 'space-around', mt: 15 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }}>
                 <Box
-                    sx={{ width: '30%', m: 5 }}
+                    sx={{ width: '40%', m: 5, ml: 10, mr: 20 }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.5 }}
@@ -255,6 +256,7 @@ export default function Home() {
                                 fontSize: { xs: '100%', md: '60px' },
                                 mr: 5,
                                 mt: 5,
+                                ml: 5,
                             }}
                         >
                             2.
@@ -296,9 +298,9 @@ export default function Home() {
                 </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', justifyContent: 'space-around', mt: 15 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }}>
                 <Box
-                    sx={{ width: '30%', m: 5 }}
+                    sx={{ width: '40%', m: 5, ml: 10, mr: 20 }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.5 }}
@@ -316,6 +318,7 @@ export default function Home() {
                                 fontSize: { xs: '100%', md: '60px' },
                                 mr: 5,
                                 mt: 5,
+                                ml: 5,
                             }}
                         >
                             3.

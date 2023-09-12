@@ -108,7 +108,19 @@ a {
     /* border-left: 1px solid rgba(130, 130, 130, 0.1); */
     border-right: 1px solid rgba(130, 130, 130, 0.1);
     box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
-    background-color: rgb(228 228 228 / 15%);
+    /* background-color: rgb(228 228 228 / 15%); */
+    background-color: rgba(60, 60, 100, 0.514);
+}
+
+.frosted-docs {
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    border-top: 2px solid rgba(130, 130, 130, 0.3);
+    /* border-left: 1px solid rgba(130, 130, 130, 0.1); */
+    border-right: 1px solid rgba(130, 130, 130, 0.1);
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgba(60, 60, 100, 0.753);
 }
 
 .frosted-divider {
@@ -179,8 +191,8 @@ a {
 .indicatorLines {
     width: 30px;
     overflow: visible;
-    stroke: #fff;
-    stroke-width: 2;
+    stroke: rgb(68, 68, 121);
+    stroke-width: 4;
     stroke-linejoin: round;
     stroke-linecap: round;
 }
