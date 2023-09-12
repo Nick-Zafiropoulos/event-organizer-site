@@ -35,7 +35,7 @@ export default function Home() {
                             ml: { xs: 2, md: 15 },
                         }}
                     >
-                        Meet the Discord Event Organizer
+                        <b>Meet the Discord Event Organizer</b>
                     </Typography>
                 </Box>
                 <Box sx={{ flexGrow: 1 }}></Box>
@@ -61,7 +61,7 @@ export default function Home() {
                             ml: { xs: 2, md: 15 },
                         }}
                     >
-                        Scheduling meetups on Discord just got a lot easier.
+                        <i>Scheduling meetups on Discord just got a lot easier.</i>
                     </Typography>
                 </Box>
                 <Box sx={{ flexGrow: 1 }}></Box>

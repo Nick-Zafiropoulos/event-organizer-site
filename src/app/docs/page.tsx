@@ -29,18 +29,17 @@ export default function Docs() {
                             flexWrap: 'wrap',
                             width: '70%',
 
-                            mt: 5,
-                            ml: { xs: 2, md: 10 },
+                            ml: { xs: 2, md: 5 },
                         }}
                     >
-                        Using Event Organizer
+                        <b>Using Event Organizer</b>
                     </Typography>
                 </Box>
                 <Box sx={{ flexGrow: 1 }}></Box>
             </Box>
 
             <Box
-                sx={{ display: 'flex', justifyContent: 'left', p: 5, pb: 100, mt: 10 }}
+                sx={{ display: 'flex', justifyContent: 'left', pl: 5, pr: 5, pb: 5, pt: 2, mt: 10 }}
                 component={motion.div}
                 className='frosted-docs'
                 initial={{ x: '0%', y: '-10%', opacity: 0 }}
@@ -52,9 +51,12 @@ export default function Docs() {
                 }}
             >
                 <Box sx={{}}>
-                    <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                        This page documents how to use Event Organizer once it is running on your Discord server. For
-                        information on setting up the application to run on your server, please visit the Setup page.
+                    <Typography align='left' sx={{ mt: 3, mr: 5, color: 'white' }}>
+                        <i>
+                            This page documents how to use Event Organizer once it is running on your Discord server.
+                            For information on setting up the application to run on your server, please visit the Setup
+                            page.
+                        </i>
                     </Typography>
                     <Typography
                         className='statement'
@@ -67,38 +69,50 @@ export default function Docs() {
                             mt: 6,
                         }}
                     >
-                        The /poll Command
+                        <u>The Poll Command</u>
                     </Typography>
                     <Typography align='left' sx={{ color: 'white' }}>
                         Event Organizer is activated by using the "/poll" command in the channel you wish to start your
                         scheduling poll in. After entering the command, you will need to enter a few parameters to
                         customize the poll.
                     </Typography>
-                    <Typography align='left' sx={{ color: 'white', mt: 5 }}>
-                        The following parameters are required to be filled in:
+                    <Typography
+                        className='statement'
+                        sx={{
+                            fontSize: { xs: '100%', md: '20px' },
+
+                            flexWrap: 'wrap',
+                            width: '50%',
+                            mb: 2,
+                            mt: 6,
+                        }}
+                    >
+                        <b>The following parameters are required to be filled in:</b>
                     </Typography>
-                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 2 }}>
-                        "title": A title for the event you are creating a poll for.
+
+                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 1 }}>
+                        <b>"title": </b>A title for the event you are creating a poll for.
                     </Typography>
-                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 2 }}>
-                        "votestowin": The amount of votes that any poll option needs in order to win. The intent of this
-                        setting is to guarantee the winning choice will suit your needs for amount of attendees.
+                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 1 }}>
+                        <b>"votestowin":</b> The amount of votes that any poll option needs in order to win. The intent
+                        of this setting is to guarantee the winning choice will suit your needs for amount of attendees.
                     </Typography>
-                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 2 }}>
-                        "pollduration": The amount of time that the poll will last, in terms of hours. For example,
-                        setting this parameter to "24" will cause the poll to last for a full day before terminating if
-                        not enough votes have been cast. The recommendation for this setting is 168 (a week) or less.
-                        Using decimals is possible to allow for granularity.
+
+                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 1 }}>
+                        <b>"pollduration":</b> The amount of time that the poll will last, in terms of hours. For
+                        example, setting this parameter to "24" will cause the poll to last for a full day before
+                        terminating if not enough votes have been cast. The recommendation for this setting is 168 (a
+                        week) or less. Using decimals is possible to allow for granularity.
                     </Typography>
-                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 2 }}>
-                        "option1": The first date/time option for your poll. All options must be entered in one of the
-                        following compatible formats:
+                    <Typography align='left' sx={{ color: 'white', ml: 3, mt: 1 }}>
+                        <b>"option1":</b> The first date/time option for your poll. All options must be entered in one
+                        of the following compatible formats:
                     </Typography>
-                    <Typography align='left' sx={{ color: 'white', ml: 6, mt: 2 }}>
+                    <Typography align='left' sx={{ color: 'white', ml: 6, mt: 1 }}>
                         "Month-Day-Year" followed by either "hour:minute AM/PM" or "hour AM/PM" (Example: "1-2-2023 5:00
                         PM" or "1-2-2023 5 PM")
                     </Typography>
-                    <Typography align='left' sx={{ color: 'white', ml: 6, mt: 2 }}>
+                    <Typography align='left' sx={{ color: 'white', ml: 6, mt: 1 }}>
                         "Month/Day/Year" followed by either "hour:minute AM/PM" or "hour AM/PM" (Example: "1/2/2023 5:00
                         PM" or "1/2/2023 5 PM")
                     </Typography>
@@ -118,7 +132,7 @@ export default function Docs() {
                             mt: 6,
                         }}
                     >
-                        Using the Poll
+                        <u>Using The Poll</u>
                     </Typography>
                     <Typography align='left' sx={{ color: 'white' }}>
                         After the poll is created, it should now be viewable by the server to vote on. Users should
