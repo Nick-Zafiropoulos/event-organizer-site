@@ -7,7 +7,7 @@ The website is still under construction and therefore is not a completed project
 To view the code for Event Organizer: 
 
 <a href="https://github.com/Nick-Zafiropoulos/discord-event-organizer">
-    <img width="240px" alt="Discord Event Organizer" title="Go to Event Organizer" src="https://custom-icon-badges.demolab.com/badge/-Go%20to%20Event%20Organizer-green?style=for-the-badge&logoColor=white&logo=sign-in"/></a>
+    <img width="240px" alt="Discord Event Organizer" title="Go to Event Organizer" src="https://custom-icon-badges.demolab.com/badge/-Go%20to%20Event%20Organizer-blue?style=for-the-badge&logoColor=white&logo=sign-in"/></a>
 
 
 
