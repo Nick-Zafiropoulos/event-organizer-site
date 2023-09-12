@@ -9,6 +9,9 @@ To view the code for Event Organizer:
 <a href="https://github.com/Nick-Zafiropoulos/discord-event-organizer">
     <img width="240px" alt="Discord Event Organizer" title="Go to Event Organizer" src="https://custom-icon-badges.demolab.com/badge/-Go%20to%20Event%20Organizer-green?style=for-the-badge&logoColor=white&logo=sign-in"/></a>
 
+
+
+
  
 ## Languages and Tools
 
@@ -26,5 +29,6 @@ To view the code for Event Organizer:
 
 Next.js, Typescript, Javascript, React, HTML, CSS
 
-
+## Site Preview
+![EOSiteSample](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/0b901d1d-2537-41f5-af66-6a017412dc80)
 
