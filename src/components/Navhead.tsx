@@ -34,18 +34,19 @@ function Navhead() {
                     </Button>
 
                     <Button
-                        href='/docs'
+                        href='/setup'
                         sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white', ml: 3 }}
                         variant='text'
                     >
-                        DOCS
+                        SETUP
                     </Button>
+
                     <Button
-                        href='/setup'
+                        href='/docs'
                         sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white' }}
                         variant='text'
                     >
-                        SETUP
+                        DOCS
                     </Button>
                 </Box>
             </Box>

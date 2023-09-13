@@ -56,7 +56,7 @@ export default function Home() {
 
                             flexWrap: 'wrap',
                             width: '50%',
-                            mb: 20,
+                            mb: 15,
                             mt: 5,
                             ml: { xs: 2, md: 15 },
                         }}
@@ -132,7 +132,7 @@ export default function Home() {
                 sx={{ display: 'flex', justifyContent: 'space-around', mt: 15, mb: 15 }}
                 component={motion.div}
                 className='frosted-divider divider-glass'
-                initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.5 }}
+                initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.8 }}
                 animate={{ x: '0%', y: '0%', opacity: 1, scale: 1 }}
                 transition={{
                     duration: 1,
@@ -147,18 +147,18 @@ export default function Home() {
                 transition={{ duration: 1, delay: 0.7, ease: [0, 0.71, 0.2, 1.01] }}
                 animate={{ x: '0%', y: '0%', opacity: 1 }}
                 sx={{
-                    fontSize: { xs: '100%', md: '40px' },
+                    fontSize: { xs: '100%', md: '45px' },
 
                     flexWrap: 'wrap',
                     width: '50%',
-                    mb: 20,
+                    mb: 10,
                     mt: 5,
                     ml: { xs: 2, md: 15 },
                 }}
             >
-                Here's how it works:
+                <b>Here's how it works:</b>
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 10 }}>
                 <Box
                     sx={{ width: '40%', m: 5, ml: 10, mr: 20 }}
                     component={motion.div}
@@ -370,6 +370,32 @@ export default function Home() {
                             </Typography>
                         </Box>
                     </Box>
+                </Box>
+            </Box>
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 10, mb: 10 }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                    Get started with Event Organizer
+                </Box>
+            </Box>
+
+            <Box
+                sx={{ display: 'flex', justifyContent: 'space-around', mt: 5, mb: 5 }}
+                component={motion.div}
+                className='footer-divider frosted-divider'
+                initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.8 }}
+                animate={{ x: '0%', y: '0%', opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 1,
+                    delay: 0.4,
+                    ease: [0, 0.71, 0.2, 1.01],
+                }}
+            ></Box>
+            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                    Get In Contact
+                </Box>
+                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                    Github
                 </Box>
             </Box>
         </Box>
