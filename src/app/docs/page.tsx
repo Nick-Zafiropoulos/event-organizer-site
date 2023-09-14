@@ -19,7 +19,7 @@ export default function Docs() {
             >
                 <Box
                     component={motion.div}
-                    initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                    initial={{ x: '0%', y: '0%', opacity: 0 }}
                     transition={{ duration: 0.6, delay: 0.1, ease: [0, 0.71, 0.2, 1.01] }}
                     animate={{ x: '0%', y: '0%', opacity: 1 }}
                     sx={{ display: 'flex' }}
@@ -46,7 +46,7 @@ export default function Docs() {
                     sx={{ display: 'flex', justifyContent: 'left', pl: 5, pr: 5, pb: 5, pt: 2, mt: 10 }}
                     component={motion.div}
                     className='frosted-docs'
-                    initial={{ x: '0%', y: '-10%', opacity: 0 }}
+                    initial={{ x: '0%', y: '-30px', opacity: 0 }}
                     animate={{ x: '0%', y: '0%', opacity: 1 }}
                     transition={{
                         duration: 1,
