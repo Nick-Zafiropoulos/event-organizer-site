@@ -203,6 +203,15 @@ a {
     stroke-linecap: round;
 }
 
+.footerLines {
+    width: 30px;
+    overflow: visible;
+    stroke: rgba(39, 39, 39, 0.404);
+    stroke-width: 4;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
 .footerText {
     color: #707070;
 }

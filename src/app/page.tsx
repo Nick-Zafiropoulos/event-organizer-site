@@ -2,12 +2,17 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import { motion } from 'framer-motion';
 import { useAnimate } from 'framer-motion';
 import { Typography } from '@mui/material';
 import testbg from '../images/testbg.jpeg';
 import exampleimg from '../images/testpollimg.jpg';
 import { IndicatorLine } from './../components/IndicatorLine';
+import { FooterLine } from './../components/FooterLine';
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Home() {
     return (
@@ -69,7 +74,7 @@ export default function Home() {
 
             <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
                 <Box
-                    sx={{ width: '30%', m: 5 }}
+                    sx={{ width: '35%', m: 5 }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '-10%', opacity: 0 }}
@@ -372,30 +377,49 @@ export default function Home() {
                     </Box>
                 </Box>
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 10, mb: 10 }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
-                    Get started with Event Organizer
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 15, mb: 10 }}>
+                <Box className='statement' sx={{ display: 'flex', justifyContent: 'center', fontSize: '40px' }}>
+                    <i>
+                        <b>Want To Get Started?</b>
+                    </i>
+                </Box>
+                <Box sx={{ display: 'flex', alignItems: 'center', ml: 5 }}>
+                    <Button
+                        href='http://localhost:3000/setup'
+                        color='secondary'
+                        sx={{ fontSize: '15px', display: 'flex', alignItems: 'center' }}
+                        variant='contained'
+                        endIcon={<PlayCircleOutlineIcon />}
+                    >
+                        Take Me To Setup
+                    </Button>
                 </Box>
             </Box>
 
             <Box
-                sx={{ display: 'flex', justifyContent: 'space-around', mt: 5, mb: 5 }}
                 component={motion.div}
-                className='footer-divider frosted-divider'
-                initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.8 }}
-                animate={{ x: '0%', y: '0%', opacity: 1, scale: 1 }}
+                initial={{ x: '-20%', y: '0%', opacity: 0, scale: 0.8 }}
+                animate={{ x: '-20%', y: '0%', opacity: 1, scale: 1 }}
                 transition={{
                     duration: 1,
                     delay: 0.4,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}
-            ></Box>
-            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            >
+                <FooterLine />
+            </Box>
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
                 <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
-                    Get In Contact
+                    <EmailIcon />
+                    &nbsp;
+                    <a href='mailto: nick.zaff@gmail.com'>Get In Contact</a>
                 </Box>
                 <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
-                    Github
+                    <GitHubIcon />
+                    &nbsp;GitHub:&nbsp;
+                    <a href='https://github.com/Nick-Zafiropoulos/discord-event-organizer'>Event Organizer Repo</a>
+                    &nbsp;&nbsp;/&nbsp;&nbsp;
+                    <a href='https://github.com/Nick-Zafiropoulos/event-organizer-site'>Website Repo</a>
                 </Box>
             </Box>
         </Box>
