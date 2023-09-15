@@ -393,7 +393,7 @@ export default function Home() {
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', ml: 5 }}>
                     <Button
-                        href='http://localhost:3000/setup'
+                        href='https://eventorganizer.up.railway.app/setup'
                         color='secondary'
                         sx={{ fontSize: '15px', display: 'flex', alignItems: 'center' }}
                         variant='contained'
