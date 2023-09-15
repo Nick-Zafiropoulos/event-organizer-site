@@ -6,10 +6,8 @@ import Button from '@mui/material/Button';
 import { motion } from 'framer-motion';
 import { useAnimate } from 'framer-motion';
 import { Typography } from '@mui/material';
-import testbg from '../images/testbg.jpeg';
-import exampleimg from '../images/testpollimg.jpg';
-import { IndicatorLine } from './../components/IndicatorLine';
-import { FooterLine } from './../components/FooterLine';
+import IndicatorLine from './../components/IndicatorLine';
+import FooterLine from './../components/FooterLine';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -161,7 +159,7 @@ export default function Home() {
                     ml: { xs: 2, md: 15 },
                 }}
             >
-                <b>Here's how it works:</b>
+                <b>Here&apos;s how it works:</b>
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'left', mt: 10 }}>
                 <Box
@@ -364,7 +362,7 @@ export default function Home() {
                         <img src='/eventorganizeralertimg.jpg' />
                         <Box sx={{}}>
                             <Typography align='left' sx={{ mt: 2, mb: 5, color: 'white' }}>
-                                The server is alerted to the event's creation
+                                The server is alerted to the event&apos;s creation
                             </Typography>
                         </Box>
                         <img src='/eventorganizereventimg.jpg' />

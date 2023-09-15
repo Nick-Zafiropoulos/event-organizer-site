@@ -16,7 +16,7 @@ const icon = {
     },
 };
 
-export const IndicatorLine = () => {
+function IndicatorLine() {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column' }} className='container'>
             <motion.svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' className='indicatorLines'>
@@ -46,4 +46,6 @@ export const IndicatorLine = () => {
             </motion.svg>
         </Box>
     );
-};
+}
+
+export default IndicatorLine;

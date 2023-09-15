@@ -16,7 +16,7 @@ const icon = {
     },
 };
 
-export const FooterLine = () => {
+function FooterLine() {
     return (
         <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }} className='container'>
             <motion.svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' className='footerLines'>
@@ -34,4 +34,6 @@ export const FooterLine = () => {
             </motion.svg>
         </Box>
     );
-};
+}
+
+export default FooterLine;

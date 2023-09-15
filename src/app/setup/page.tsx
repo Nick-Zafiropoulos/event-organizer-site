@@ -5,14 +5,12 @@ import Box from '@mui/material/Box';
 import { motion } from 'framer-motion';
 import { useAnimate } from 'framer-motion';
 import { Typography } from '@mui/material';
-import { FooterLine } from '../../components/FooterLine';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Setup() {
     return (
         <Box>
-            {' '}
             <Box
                 className='backgroundClassSetup'
                 sx={{ height: { xs: '200vw', md: '100%' }, width: { xs: 'cover', md: '100%' }, p: { xs: 2, md: 10 } }}
@@ -105,10 +103,10 @@ export default function Setup() {
                             </a>
                             .<br></br>
                             <br></br>
-                            Now that the code is on your machine, you will need to create a ".env" file in the same
-                            folder as the "index.js" file for the project. This ".env" file will contain the information
-                            Event Organizer needs to connect to your specific Discord server. The ".env" file needs to
-                            contain the following information:
+                            Now that the code is on your machine, you will need to create a &quot;.env&quot; file in the
+                            same folder as the &quot;index.js&quot; file for the project. This &quot;.env&quot; file
+                            will contain the information Event Organizer needs to connect to your specific Discord
+                            server. The &quot;.env&quot; file needs to contain the following information:
                             <br></br>
                             <br></br>
                         </Typography>
@@ -121,9 +119,9 @@ export default function Setup() {
                                     {' '}
                                     <u>Discord Developer Page</u>
                                 </a>
-                                &nbsp;to create the Event Organizer "bot user". Make sure to follow the "Adding scopes
-                                and bot permissions" and "Installing your app" sections as well in order to authorize
-                                Event Organizer on your Discord server.
+                                &nbsp;to create the Event Organizer &quot;bot user&quot;. Make sure to follow the
+                                &quot;Adding scopes and bot permissions&quot; and &quot;Installing your app&quot;
+                                sections as well in order to authorize Event Organizer on your Discord server.
                             </i>
                             <br></br>
                             <br></br>
@@ -131,7 +129,8 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 After your app has been created through the Discord Developer Page, look for your Event
-                                Organizer's "Application ID" the General Information section of your app's page.
+                                Organizer&apos;s &quot;Application ID&quot; the General Information section of your
+                                app&apos;s page.
                             </i>
                             <br></br>
                             <br></br>
@@ -139,8 +138,8 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 This can be found by enabling Developer Mode (Settings -&gt; Advanced -&gt; Developer
-                                Mode) and then right-clicking your Server's name in the Discord sidebar, and pressing
-                                "Copy Server ID".
+                                Mode) and then right-clicking your Server&apos;s name in the Discord sidebar, and
+                                pressing &quot;Copy Server ID&quot;.
                             </i>
                             <br></br>
                             <br></br>
@@ -148,15 +147,15 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 With Developer Mode turned on, right-click the channel that you want Event Organizer to
-                                post polls in and press "Copy Channel ID".
+                                post polls in and press &quot;Copy Channel ID&quot;.
                             </i>
                         </Typography>
                         <br></br>
 
                         <Typography align='left' sx={{ mr: 5, color: 'white' }}>
-                            With the ".env" file set up, save it and run the build using an editor such as Visual Studio
-                            Code or similar. If everything is set up correctly, Event Organizer will appear online in
-                            your Discord server and be ready to use!
+                            With the &quot;.env&quot; file set up, save it and run the build using an editor such as
+                            Visual Studio Code or similar. If everything is set up correctly, Event Organizer will
+                            appear online in your Discord server and be ready to use!
                         </Typography>
                         <Typography
                             className='statement'
@@ -181,8 +180,8 @@ export default function Setup() {
                             &nbsp;and then uploading it to your preferred hosting service. An explanation of how to use
                             the various hosting services available is beyond the scope of this setup guide, however
                             regardless of which hosting service you choose to utilize you will need to provide it with
-                            environment variables. These are the same as the variables in the ".env" set up in the
-                            "Local Hosting" section above, and are defined as follows:<br></br>
+                            environment variables. These are the same as the variables in the &quot;.env&quot; set up in
+                            the &quot;Local Hosting&quot; section above, and are defined as follows:<br></br>
                             <br></br>
                         </Typography>
                         <Typography align='left' sx={{ ml: 10, mr: 5, color: 'white' }}>
@@ -194,9 +193,9 @@ export default function Setup() {
                                     {' '}
                                     <u>Discord Developer Page</u>
                                 </a>
-                                &nbsp;to create the Event Organizer "bot user". Make sure to follow the "Adding scopes
-                                and bot permissions" and "Installing your app" sections as well in order to authorize
-                                Event Organizer on your Discord server.
+                                &nbsp;to create the Event Organizer &quot;bot user&quot;. Make sure to follow the
+                                &quot;Adding scopes and bot permissions&quot; and &quot;Installing your app&quot;
+                                sections as well in order to authorize Event Organizer on your Discord server.
                             </i>
                             <br></br>
                             <br></br>
@@ -204,7 +203,8 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 After your app has been created through the Discord Developer Page, look for your Event
-                                Organizer's "Application ID" the General Information section of your app's page.
+                                Organizer&apos;s &quot;Application ID&quot; the General Information section of your
+                                app&apos;s page.
                             </i>
                             <br></br>
                             <br></br>
@@ -212,8 +212,8 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 This can be found by enabling Developer Mode (Settings -&gt; Advanced -&gt; Developer
-                                Mode) and then right-clicking your Server's name in the Discord sidebar, and pressing
-                                "Copy Server ID".
+                                Mode) and then right-clicking your Server&apos;s name in the Discord sidebar, and
+                                pressing &quot;Copy Server ID&quot;.
                             </i>
                             <br></br>
                             <br></br>
@@ -221,7 +221,7 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 With Developer Mode turned on, right-click the channel that you want Event Organizer to
-                                post polls in and press "Copy Channel ID".
+                                post polls in and press &quot;Copy Channel ID&quot;.
                             </i>
                             <br></br>
                             <br></br>
