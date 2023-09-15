@@ -1,4 +1,3 @@
-'use client';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -8,6 +7,7 @@ import Navhead from '../components/Navhead';
 import Box from '@mui/material/Box';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import ClientComponent from '@/app/ClientComponent';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,19 +19,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props) {
     const { children } = props;
-    const router = useRouter();
+
     return (
-        <AnimatePresence mode='wait'>
-            <html lang='en'>
-                <body>
-                    {/* <Navbar sx={{ backgroundColor: '#000' }} /> */}
-                    <Navhead />
-                    {/* <Navbar /> */}
-                    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <ThemeRegistry options={{ key: 'mui' }}>{children}</ThemeRegistry>
-                    </Box>
-                </body>
-            </html>
-        </AnimatePresence>
+        <>
+            <ClientComponent>{children}</ClientComponent>
+        </>
     );
 }
