@@ -152,14 +152,14 @@ a {
 }
 
 .backgroundClassSetup {
-    background: url('../images/eventorganizer2ndpage.png');
+    background: url('../images/setupbackgroundgradient.png');
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
 }
 
 .backgroundClassDocs {
-    background: url('../images/eventorganizer3rdpage.png');
+    background: url('../images/docsbackgroundgradient2.png');
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;

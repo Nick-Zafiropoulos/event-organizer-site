@@ -58,7 +58,7 @@ export default function Home() {
                             fontSize: { xs: '100%', md: '30px' },
 
                             flexWrap: 'wrap',
-                            width: '50%',
+                            width: '55%',
                             mb: 15,
                             mt: 5,
                             ml: { xs: 2, md: 15 },

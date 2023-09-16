@@ -2,11 +2,13 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import { motion } from 'framer-motion';
 import { useAnimate } from 'framer-motion';
 import { Typography } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 
 export default function Setup() {
     return (
@@ -72,13 +74,12 @@ export default function Setup() {
                             <u>Hosting Options</u>
                         </Typography>
                         <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                            As stated above, you have a couple of options when it comes to hosting Event Organizer. The
-                            first is to host the application on a local machine which you are responsible for keeping
-                            running. This is easier to set up and run, however will require you to keep it running if
-                            you wish to use Event Organizer frequently. The second option is to host Event Organizer
-                            remotely through a hosting service (i.e. AWS, Azure, Railway, etc.). The advantage to remote
-                            hosting is the ability for the application to run 24/7, however depending on your usage you
-                            may incur fees from the service provider.
+                            You have a couple of options when it comes to hosting Event Organizer. The first is to host
+                            the application on a local machine which you are responsible for keeping running. This is
+                            easier to set up and run, however will require you to keep it running if you wish to use
+                            Event Organizer frequently. The second option is to host Event Organizer remotely through a
+                            hosting service (i.e. AWS, Azure, Railway, etc.). Remote hosting will allow you run the
+                            application 24/7, but may incur fees from the service provider depending on your usage.
                         </Typography>
                         <Typography
                             className='statement'
@@ -129,7 +130,7 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 After your app has been created through the Discord Developer Page, look for your Event
-                                Organizer&apos;s &quot;Application ID&quot; the General Information section of your
+                                Organizer&apos;s &quot;Application ID&quot; in the General Information section of your
                                 app&apos;s page.
                             </i>
                             <br></br>
@@ -203,7 +204,7 @@ export default function Setup() {
                             <br></br>
                             <i>
                                 After your app has been created through the Discord Developer Page, look for your Event
-                                Organizer&apos;s &quot;Application ID&quot; the General Information section of your
+                                Organizer&apos;s &quot;Application ID&quot; in the General Information section of your
                                 app&apos;s page.
                             </i>
                             <br></br>
@@ -233,6 +234,35 @@ export default function Setup() {
                             <br></br>
                             <br></br>
                         </Typography>
+                        <Box
+                            component={motion.div}
+                            initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
+                            animate={{ x: '0%', y: '0%', opacity: 1, scale: 1 }}
+                            transition={{
+                                duration: 0.8,
+                                delay: 1.1,
+                                ease: [0, 0.71, 0.2, 1.01],
+                            }}
+                            sx={{ display: 'flex', justifyContent: 'center', mt: 5, mb: 5 }}
+                        >
+                            <Box
+                                className='statement'
+                                sx={{ display: 'flex', justifyContent: 'center', fontSize: '30px' }}
+                            >
+                                <b>All Set Up? Make Your First Event Organizer Poll!</b>
+                            </Box>
+                            <Box sx={{ display: 'flex', alignItems: 'center', ml: 5 }}>
+                                <Button
+                                    href='https://eventorganizer.up.railway.app/docs'
+                                    color='secondary'
+                                    sx={{ fontSize: '15px', display: 'flex', alignItems: 'center' }}
+                                    variant='contained'
+                                    endIcon={<PlayCircleOutlineIcon />}
+                                >
+                                    Show Me How
+                                </Button>
+                            </Box>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
