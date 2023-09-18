@@ -18,10 +18,10 @@ const icon = {
 
 function FooterLine() {
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }} className='container'>
+        <Box sx={{ display: 'flex', justifyContent: 'left', width: '100%', mt: 15 }} className='container'>
             <motion.svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' className='footerLines'>
                 <motion.path
-                    d='M0 0L8000 3'
+                    d='M900 0L7320 3'
                     variants={icon}
                     initial='hidden'
                     animate='visible'

@@ -116,13 +116,13 @@ export default function Home() {
                 >
                     <Box sx={{}}>
                         <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                            Full Date/Time Control
+                            <b>Full Date/Time Control</b>
                         </Typography>
                         <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                            Up to 5 Poll Options
+                            <b>Up to 5 Poll Options</b>
                         </Typography>
                         <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                            Automatic Event Creation
+                            <b>Automatic Event Creation</b>
                         </Typography>
                     </Box>
                     <Box sx={{}}>
@@ -159,7 +159,7 @@ export default function Home() {
                     ml: { xs: 2, md: 15 },
                 }}
             >
-                <b>Here&apos;s how it works:</b>
+                <b>Here&apos;s How It Works:</b>
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'left', mt: 10 }}>
                 <Box
@@ -174,7 +174,7 @@ export default function Home() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                         <Typography
                             className='statement'
                             sx={{
@@ -184,7 +184,7 @@ export default function Home() {
                                 ml: 5,
                             }}
                         >
-                            1.
+                            <b>1.</b>
                         </Typography>
                         <Typography align='left' sx={{ fontSize: { xs: '100%', md: '25px' }, mt: 5 }}>
                             Use the /poll command to customize the event poll to your needs.
@@ -221,18 +221,18 @@ export default function Home() {
                         <img className='eoImages' src='/eventorganizerpollcreateimg.jpg' />
                         <Box sx={{ display: 'flex' }}>
                             <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                                - Name your event
+                                <b>- Name your event</b>
                             </Typography>
                             <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                                - Set how many votes a date needs to win
+                                <b>- Set how many votes a date needs to win</b>
                             </Typography>
                         </Box>
                         <Box sx={{ display: 'flex' }}>
                             <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                                - Set the duration of the poll (in hours)
+                                <b>- Set the duration of the poll (in hours)</b>
                             </Typography>
                             <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
-                                - Set up to 5 date/time choices
+                                <b>- Set up to 5 date/time choices</b>
                             </Typography>
                         </Box>
                     </Box>
@@ -252,7 +252,7 @@ export default function Home() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                         <Typography
                             className='statement'
                             sx={{
@@ -262,7 +262,7 @@ export default function Home() {
                                 ml: 5,
                             }}
                         >
-                            2.
+                            <b>2.</b>
                         </Typography>
                         <Typography align='left' sx={{ mt: 5, fontSize: { xs: '100%', md: '25px' } }}>
                             Server members react to the poll to indicate their availability.
@@ -314,7 +314,7 @@ export default function Home() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                         <Typography
                             className='statement'
                             sx={{
@@ -324,7 +324,7 @@ export default function Home() {
                                 ml: 5,
                             }}
                         >
-                            3.
+                            <b>3.</b>
                         </Typography>
                         <Typography align='left' sx={{ mt: 5, fontSize: { xs: '100%', md: '25px' } }}>
                             The winning choice of your poll is automatically converted to an event for your discord
@@ -359,13 +359,13 @@ export default function Home() {
                     }}
                 >
                     <Box sx={{}}>
-                        <img src='/eventorganizeralertimg.jpg' />
+                        <img className='eoImages' src='/eoeventcreation.jpg' />
                         <Box sx={{}}>
                             <Typography align='left' sx={{ mt: 2, mb: 5, color: 'white' }}>
                                 The server is alerted to the event&apos;s creation
                             </Typography>
                         </Box>
-                        <img src='/eventorganizereventimg.jpg' />
+                        <img className='eoImages' src='/eoeventinserver.jpg' />
 
                         <Box sx={{}}>
                             <Typography align='left' sx={{ mt: 2, mb: 2, color: 'white' }}>

@@ -26,10 +26,10 @@ export default function Docs() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '55px' },
+                                fontSize: { xs: '30px', md: '55px' },
 
                                 flexWrap: 'wrap',
-                                width: '70%',
+                                width: { xs: '100%', md: '70%' },
 
                                 ml: { xs: 2, md: 5 },
                             }}
@@ -41,7 +41,15 @@ export default function Docs() {
                 </Box>
 
                 <Box
-                    sx={{ display: 'flex', justifyContent: 'left', pl: 5, pr: 5, pb: 5, pt: 2, mt: 10 }}
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'left',
+                        pl: { xs: 3, md: 5 },
+                        pr: { xs: 3, md: 5 },
+                        pb: { xs: 3, md: 5 },
+                        pt: { xs: 3, md: 5 },
+                        mt: { xs: 2, md: 10 },
+                    }}
                     component={motion.div}
                     className='frosted-docs'
                     initial={{ x: '0%', y: '-30px', opacity: 0 }}
@@ -63,10 +71,10 @@ export default function Docs() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '30px' },
+                                fontSize: { xs: '20px', md: '30px' },
 
                                 flexWrap: 'wrap',
-                                width: '50%',
+                                width: { xs: '100%', md: '50%' },
                                 mb: 2,
                                 mt: 6,
                             }}
@@ -84,7 +92,7 @@ export default function Docs() {
                                 fontSize: { xs: '100%', md: '20px' },
 
                                 flexWrap: 'wrap',
-                                width: '50%',
+                                width: { xs: '100%', md: '50%' },
                                 mb: 2,
                                 mt: 6,
                             }}
@@ -127,10 +135,10 @@ export default function Docs() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '30px' },
+                                fontSize: { xs: '20px', md: '30px' },
 
                                 flexWrap: 'wrap',
-                                width: '50%',
+                                width: { xs: '100%', md: '50%' },
                                 mb: 2,
                                 mt: 6,
                             }}
