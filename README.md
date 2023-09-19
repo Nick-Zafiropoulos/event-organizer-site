@@ -6,9 +6,8 @@ The website is still under construction and therefore is not a completed project
 
 <a href="https://eventorganizer.up.railway.app/">
     <img width="130px" alt="Discord Event Organizer Site" title="Go to Site" src="https://custom-icon-badges.demolab.com/badge/-Go%20to%20Site-purple?style=for-the-badge&logoColor=white&logo=sign-in"/></a>
-
-To view the code for Event Organizer: 
-
+<br></br>
+To view the code for Event Organizer: <br></br>
 <a href="https://github.com/Nick-Zafiropoulos/discord-event-organizer">
     <img width="240px" alt="Discord Event Organizer" title="Go to Event Organizer" src="https://custom-icon-badges.demolab.com/badge/-Go%20to%20Event%20Organizer-blue?style=for-the-badge&logoColor=white&logo=sign-in"/></a>
 
