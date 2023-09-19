@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <Box
             className='backgroundClass'
-            sx={{ height: { xs: '200vw', md: '100%' }, width: { xs: 'cover', md: '100%' }, p: { xs: 2, md: 10 } }}
+            sx={{ height: { xs: 'cover', md: '100%' }, width: { xs: '100vw', md: '100%' }, p: { xs: 2, md: 10 } }}
         >
             <Box
                 component={motion.div}
@@ -29,12 +29,11 @@ export default function Home() {
                     <Typography
                         className='statement'
                         sx={{
-                            fontSize: { xs: '100%', md: '55px' },
+                            fontSize: { xs: '30px', md: '55px' },
 
-                            flexWrap: 'wrap',
-                            width: '70%',
+                            width: '100%',
 
-                            mt: 5,
+                            mt: { xs: 2, md: 5 },
                             ml: { xs: 2, md: 15 },
                         }}
                     >
@@ -55,12 +54,12 @@ export default function Home() {
                     <Typography
                         className='statement'
                         sx={{
-                            fontSize: { xs: '100%', md: '30px' },
+                            fontSize: { xs: '15px', md: '30px' },
 
                             flexWrap: 'wrap',
-                            width: '55%',
-                            mb: 15,
-                            mt: 5,
+                            width: { xs: '100%', md: '55%' },
+                            mb: { xs: 5, md: 15 },
+                            mt: { xs: 3, md: 5 },
                             ml: { xs: 2, md: 15 },
                         }}
                     >
@@ -70,9 +69,15 @@ export default function Home() {
                 <Box sx={{ flexGrow: 1 }}></Box>
             </Box>
 
-            <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: { xs: 'left', md: 'space-around' },
+                    flexDirection: { xs: 'column', md: 'row' },
+                }}
+            >
                 <Box
-                    sx={{ width: '35%', m: 5 }}
+                    sx={{ width: { xs: '95%', md: '35%' }, m: { xs: 0, md: 5 } }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '-10%', opacity: 0 }}
@@ -83,7 +88,10 @@ export default function Home() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <Typography align='left' sx={{ p: 0, mt: 10, ml: 5, fontSize: { xs: '100%', md: '25px' } }}>
+                    <Typography
+                        align='left'
+                        sx={{ p: 0, mt: { xs: 2, md: 10 }, ml: { xs: 2, md: 5 }, fontSize: { xs: '15px', md: '25px' } }}
+                    >
                         Use Event Organizer to choose the right date and time for your next get-together by polling your
                         server members.
                     </Typography>
@@ -103,7 +111,13 @@ export default function Home() {
                     </Box>
                 </Box>
                 <Box
-                    sx={{ display: 'flex', justifyContent: 'center', p: 5, mt: 4 }}
+                    sx={{
+                        display: 'flex',
+                        justifyContent: { xs: 'left', md: 'center' },
+                        flexDirection: { xs: 'column-reverse', md: 'row' },
+                        p: { xs: 2, md: 5 },
+                        mt: { xs: 2, md: 4 },
+                    }}
                     component={motion.div}
                     className='frosted'
                     initial={{ x: '0%', y: '-10%', opacity: 0 }}
@@ -115,13 +129,13 @@ export default function Home() {
                     }}
                 >
                     <Box sx={{}}>
-                        <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             <b>Full Date/Time Control</b>
                         </Typography>
-                        <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             <b>Up to 5 Poll Options</b>
                         </Typography>
-                        <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             <b>Automatic Event Creation</b>
                         </Typography>
                     </Box>
@@ -132,7 +146,7 @@ export default function Home() {
             </Box>
 
             <Box
-                sx={{ display: 'flex', justifyContent: 'space-around', mt: 15, mb: 15 }}
+                sx={{ display: 'flex', justifyContent: 'space-around', mt: { xs: 5, md: 15 }, mb: { xs: 3, md: 15 } }}
                 component={motion.div}
                 className='frosted-divider divider-glass'
                 initial={{ x: '0%', y: '0%', opacity: 0, scale: 0.8 }}
@@ -150,10 +164,9 @@ export default function Home() {
                 transition={{ duration: 1, delay: 0.7, ease: [0, 0.71, 0.2, 1.01] }}
                 animate={{ x: '0%', y: '0%', opacity: 1 }}
                 sx={{
-                    fontSize: { xs: '100%', md: '45px' },
+                    fontSize: { xs: '30px', md: '45px' },
 
-                    flexWrap: 'wrap',
-                    width: '50%',
+                    width: '100%',
                     mb: 10,
                     mt: 5,
                     ml: { xs: 2, md: 15 },
@@ -161,9 +174,16 @@ export default function Home() {
             >
                 <b>Here&apos;s How It Works:</b>
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 10 }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: { xs: 'column-reverse', md: 'row' },
+                    justifyContent: 'left',
+                    mt: { xs: 2, md: 10 },
+                }}
+            >
                 <Box
-                    sx={{ width: '40%', m: 5, ml: 10, mr: 20 }}
+                    sx={{ width: { xs: '95%', md: '40%' }, m: 5, ml: { xs: 2, md: 10 }, mr: 20 }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
@@ -174,19 +194,26 @@ export default function Home() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                    <Box
+                        sx={{
+                            display: 'flex',
+
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                        }}
+                    >
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '60px' },
-                                mr: 5,
-                                mt: 5,
-                                ml: 5,
+                                fontSize: { xs: '25px', md: '60px' },
+                                mr: { xs: 1, md: 5 },
+                                mt: { xs: 1, md: 5 },
+                                ml: { xs: 1, md: 5 },
                             }}
                         >
                             <b>1.</b>
                         </Typography>
-                        <Typography align='left' sx={{ fontSize: { xs: '100%', md: '25px' }, mt: 5 }}>
+                        <Typography align='left' sx={{ fontSize: { xs: '15px', md: '25px' }, mt: { xs: 2, md: 5 } }}>
                             Use the /poll command to customize the event poll to your needs.
                         </Typography>
                     </Box>
@@ -206,7 +233,7 @@ export default function Home() {
                     </Box>
                 </Box>
                 <Box
-                    sx={{ display: 'flex', justifyContent: 'center', p: 5 }}
+                    sx={{ display: 'flex', justifyContent: 'center', p: { xs: 1, md: 5 } }}
                     component={motion.div}
                     className='frosted'
                     initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
@@ -220,18 +247,30 @@ export default function Home() {
                     <Box sx={{}}>
                         <img className='eoImages' src='/eventorganizerpollcreateimg.jpg' />
                         <Box sx={{ display: 'flex' }}>
-                            <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                            <Typography
+                                align='left'
+                                sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}
+                            >
                                 <b>- Name your event</b>
                             </Typography>
-                            <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                            <Typography
+                                align='left'
+                                sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}
+                            >
                                 <b>- Set how many votes a date needs to win</b>
                             </Typography>
                         </Box>
                         <Box sx={{ display: 'flex' }}>
-                            <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                            <Typography
+                                align='left'
+                                sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}
+                            >
                                 <b>- Set the duration of the poll (in hours)</b>
                             </Typography>
-                            <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                            <Typography
+                                align='left'
+                                sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}
+                            >
                                 <b>- Set up to 5 date/time choices</b>
                             </Typography>
                         </Box>
@@ -361,15 +400,15 @@ export default function Home() {
                     <Box sx={{}}>
                         <img className='eoImages' src='/eoeventcreation.jpg' />
                         <Box sx={{}}>
-                            <Typography align='left' sx={{ mt: 2, mb: 5, color: 'white' }}>
-                                The server is alerted to the event&apos;s creation
+                            <Typography align='left' sx={{ mt: 1, mb: 5, color: 'white' }}>
+                                <b>The server is alerted to the event&apos;s creation</b>
                             </Typography>
                         </Box>
                         <img className='eoImages' src='/eoeventinserver.jpg' />
 
                         <Box sx={{}}>
-                            <Typography align='left' sx={{ mt: 2, mb: 2, color: 'white' }}>
-                                Checking the events tab shows the newly created event!
+                            <Typography align='left' sx={{ mt: 1, mb: 2, color: 'white' }}>
+                                <b>Checking the events tab shows the newly created event!</b>
                             </Typography>
                         </Box>
                     </Box>
