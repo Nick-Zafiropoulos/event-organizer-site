@@ -4,6 +4,9 @@ This repo contains the code for the Event Organizer information website. Event O
 
 The website is still under construction and therefore is not a completed project as of yet, please check back for updates as aspects of the website are completed and the site goes live.
 
+<a href="https://eventorganizer.up.railway.app/">
+    <img width="130px" alt="Discord Event Organizer Site" title="Go to Site" src="https://custom-icon-badges.demolab.com/badge/-Go%20to%20Site-purple?style=for-the-badge&logoColor=white&logo=sign-in"/></a>
+
 To view the code for Event Organizer: 
 
 <a href="https://github.com/Nick-Zafiropoulos/discord-event-organizer">
@@ -29,6 +32,4 @@ To view the code for Event Organizer:
 
 Next.js, Typescript, Javascript, React, HTML, CSS
 
-## Site Preview
-![EOSiteSample](https://github.com/Nick-Zafiropoulos/event-organizer-site/assets/102330367/0b901d1d-2537-41f5-af66-6a017412dc80)
 
