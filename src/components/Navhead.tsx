@@ -4,12 +4,14 @@ import Button from '@mui/material/Button';
 
 function Navhead() {
     return (
+        // Desktop Navbar
+
         <Box
-            className='headcss'
+            className='headcss desktop-header'
             sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                p: 1.5,
+                p: { xs: 1, md: 1.2 },
                 minWidth: '100%',
             }}
         >
@@ -22,20 +24,28 @@ function Navhead() {
                     flexGrow: { xs: '1', xl: '2' },
                 }}
             >
-                <Box sx={{ display: 'flex', justifyContent: 'left', pl: 5 }}>
-                    <img className='logo' src='/EventOrganizerLogo.png' />
+                <Box sx={{ display: 'flex', justifyContent: 'left', pl: { xs: 1, md: 5 } }}>
+                    <a href='/'>
+                        <img className='logo' src='/EventOrganizerLogo.png' />
+                    </a>
 
-                    <Button
+                    {/* <Button
                         href='/'
-                        sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white', ml: 2 }}
+                        sx={{
+                            fontFamily: 'arial',
+                            maxWidth: { xs: '30%', md: '100%' },
+                            fontWeight: 'bold',
+                            color: 'white',
+                            ml: 2,
+                        }}
                         variant='text'
                     >
                         Event Organizer
-                    </Button>
+                    </Button> */}
 
                     <Button
                         href='/setup'
-                        sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white', ml: 3 }}
+                        sx={{ fontFamily: 'arial', fontWeight: 'bold', color: 'white', ml: { xs: 2, md: 3 } }}
                         variant='text'
                     >
                         SETUP

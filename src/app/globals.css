@@ -217,3 +217,15 @@ a {
 .footerText {
     color: #707070;
 }
+
+@media only screen and (max-width: 900px) {
+    .mobile-footer-line {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .desktop-footer-line {
+        display: none;
+    }
+}

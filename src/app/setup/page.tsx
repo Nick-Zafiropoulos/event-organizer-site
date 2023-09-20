@@ -15,7 +15,7 @@ export default function Setup() {
         <Box>
             <Box
                 className='backgroundClassSetup'
-                sx={{ height: { xs: '200vw', md: '100%' }, width: { xs: 'cover', md: '100%' }, p: { xs: 2, md: 10 } }}
+                sx={{ height: { xs: 'cover', md: '100%' }, width: { xs: '100vw', md: '100%' }, p: { xs: 2, md: 10 } }}
             >
                 <Box
                     component={motion.div}
@@ -28,10 +28,10 @@ export default function Setup() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '55px' },
+                                fontSize: { xs: '30px', md: '55px' },
 
                                 flexWrap: 'wrap',
-                                width: '70%',
+                                width: { xs: '100%', md: '70%' },
 
                                 ml: { xs: 2, md: 5 },
                             }}
@@ -43,19 +43,27 @@ export default function Setup() {
                 </Box>
 
                 <Box
-                    sx={{ display: 'flex', justifyContent: 'center', pl: 5, pr: 5, pb: 5, pt: 2, mt: 10 }}
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        pl: { xs: 5, md: 5 },
+                        pr: { xs: 3, md: 5 },
+                        pb: { xs: 3, md: 5 },
+                        pt: { xs: 3, md: 2 },
+                        mt: { xs: 2, md: 10 },
+                    }}
                     component={motion.div}
                     className='frosted-docs'
-                    initial={{ x: '0%', y: '-30px', opacity: 0 }}
+                    initial={{ x: '0%', y: '-40px', opacity: 0 }}
                     animate={{ x: '0%', y: '0%', opacity: 1 }}
                     transition={{
-                        duration: 1,
+                        duration: 0.5,
                         delay: 0.3,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
                     <Box sx={{}}>
-                        <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mt: { xs: 0, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             To use Event Organizer with your own Discord server, you will need to host the application
                             and connect it to your server. This page explains what you will need to do in order to
                             complete the setup process.
@@ -63,17 +71,17 @@ export default function Setup() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '30px' },
+                                fontSize: { xs: '20px', md: '30px' },
 
                                 flexWrap: 'wrap',
-                                width: '50%',
+                                width: { xs: '100%', md: '50%' },
                                 mb: 2,
                                 mt: 6,
                             }}
                         >
                             <u>Hosting Options</u>
                         </Typography>
-                        <Typography align='left' sx={{ mt: 5, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mt: { xs: 0, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             You have a couple of options when it comes to hosting Event Organizer. The first is to host
                             the application on a local machine which you are responsible for keeping running. This is
                             easier to set up and run, however will require you to keep it running if you wish to use
@@ -84,10 +92,10 @@ export default function Setup() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '25px' },
+                                fontSize: { xs: '110%', md: '25px' },
 
                                 flexWrap: 'wrap',
-                                width: '50%',
+                                width: { xs: '100%', md: '50%' },
                                 mb: 2,
                                 mt: 6,
                             }}
@@ -95,7 +103,7 @@ export default function Setup() {
                             <b>Local Hosting:</b>
                         </Typography>
 
-                        <Typography align='left' sx={{ mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mr: { xs: 2, md: 5 }, color: 'white' }}>
                             Running Event Organizer from a local machine can be accomplished by downloading the code
                             from the
                             <a href='https://github.com/Nick-Zafiropoulos/discord-event-organizer'>
@@ -111,7 +119,7 @@ export default function Setup() {
                             <br></br>
                             <br></br>
                         </Typography>
-                        <Typography align='left' sx={{ ml: 10, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ ml: { xs: 3, md: 10 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             <b>BOT_TOKEN = YOUR_TOKEN_HERE</b>
                             <br></br>
                             <i>
@@ -153,7 +161,7 @@ export default function Setup() {
                         </Typography>
                         <br></br>
 
-                        <Typography align='left' sx={{ mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mr: { xs: 2, md: 5 }, color: 'white' }}>
                             With the &quot;.env&quot; file set up, save it and run the build using an editor such as
                             Visual Studio Code or similar. If everything is set up correctly, Event Organizer will
                             appear online in your Discord server and be ready to use!
@@ -161,7 +169,7 @@ export default function Setup() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '25px' },
+                                fontSize: { xs: '110%', md: '25px' },
 
                                 flexWrap: 'wrap',
                                 width: '50%',
@@ -171,7 +179,7 @@ export default function Setup() {
                         >
                             <b>Remote Hosting:</b>
                         </Typography>
-                        <Typography align='left' sx={{ mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mr: { xs: 2, md: 5 }, color: 'white' }}>
                             Running Event Organizer on a remote hosting service can be accomplished by downloading the
                             code from the
                             <a href='https://github.com/Nick-Zafiropoulos/discord-event-organizer'>
@@ -185,7 +193,7 @@ export default function Setup() {
                             the &quot;Local Hosting&quot; section above, and are defined as follows:<br></br>
                             <br></br>
                         </Typography>
-                        <Typography align='left' sx={{ ml: 10, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ ml: { xs: 3, md: 10 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             <b>BOT_TOKEN = YOUR_TOKEN_HERE</b>
                             <br></br>
                             <i>
@@ -228,7 +236,7 @@ export default function Setup() {
                             <br></br>
                         </Typography>
 
-                        <Typography align='left' sx={{ mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mr: { xs: 2, md: 5 }, color: 'white' }}>
                             With the above environment variables provided to your hosting service of choice, the Event
                             Organizer application should be up and running!
                             <br></br>
@@ -269,6 +277,7 @@ export default function Setup() {
             <Box
                 sx={{
                     display: 'flex',
+                    flexDirection: { xs: 'column', md: 'row' },
                     justifyContent: 'center',
                     p: 3,
 
@@ -276,12 +285,27 @@ export default function Setup() {
                     width: '100%',
                 }}
             >
-                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                <Box
+                    className='footerText'
+                    sx={{
+                        display: 'flex',
+                        justifyContent: { xs: 'left', md: 'center' },
+                        width: '50%',
+                        mb: { xs: 2, md: 0 },
+                    }}
+                >
                     <EmailIcon />
                     &nbsp;
                     <a href='mailto: nick.zaff@gmail.com'>Get In Contact</a>
                 </Box>
-                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                <Box
+                    className='footerText'
+                    sx={{
+                        display: 'flex',
+                        justifyContent: { xs: 'left', md: 'center' },
+                        width: { xs: '90%', md: '50%' },
+                    }}
+                >
                     <GitHubIcon />
                     &nbsp;GitHub:&nbsp;
                     <a href='https://github.com/Nick-Zafiropoulos/discord-event-organizer'>Event Organizer Repo</a>

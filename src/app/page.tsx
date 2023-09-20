@@ -33,7 +33,7 @@ export default function Home() {
 
                             width: '100%',
 
-                            mt: { xs: 2, md: 5 },
+                            mt: { xs: 1, md: 5 },
                             ml: { xs: 2, md: 15 },
                         }}
                     >
@@ -161,13 +161,13 @@ export default function Home() {
                 className='statement'
                 component={motion.div}
                 initial={{ x: '0%', y: '-10%', opacity: 0 }}
-                transition={{ duration: 1, delay: 0.7, ease: [0, 0.71, 0.2, 1.01] }}
+                transition={{ duration: 0.5, delay: 0.7, ease: [0, 0.71, 0.2, 1.01] }}
                 animate={{ x: '0%', y: '0%', opacity: 1 }}
                 sx={{
                     fontSize: { xs: '30px', md: '45px' },
 
-                    width: '100%',
-                    mb: 10,
+                    width: '90%',
+                    mb: { xs: 2, md: 10 },
                     mt: 5,
                     ml: { xs: 2, md: 15 },
                 }}
@@ -177,13 +177,18 @@ export default function Home() {
             <Box
                 sx={{
                     display: 'flex',
-                    flexDirection: { xs: 'column-reverse', md: 'row' },
+                    flexDirection: { xs: 'column', md: 'row' },
                     justifyContent: 'left',
                     mt: { xs: 2, md: 10 },
                 }}
             >
                 <Box
-                    sx={{ width: { xs: '95%', md: '40%' }, m: 5, ml: { xs: 2, md: 10 }, mr: 20 }}
+                    sx={{
+                        width: { xs: '95%', md: '40%' },
+                        m: { xs: 2, md: 5 },
+                        ml: { xs: 2, md: 10 },
+                        mr: { xs: 2, md: 20 },
+                    }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
@@ -249,7 +254,12 @@ export default function Home() {
                         <Box sx={{ display: 'flex' }}>
                             <Typography
                                 align='left'
-                                sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}
+                                sx={{
+                                    ml: { xs: 1, md: 0 },
+                                    mt: { xs: 2, md: 5 },
+                                    mr: { xs: 2, md: 5 },
+                                    color: 'white',
+                                }}
                             >
                                 <b>- Name your event</b>
                             </Typography>
@@ -263,7 +273,12 @@ export default function Home() {
                         <Box sx={{ display: 'flex' }}>
                             <Typography
                                 align='left'
-                                sx={{ mt: { xs: 2, md: 5 }, mr: { xs: 2, md: 5 }, color: 'white' }}
+                                sx={{
+                                    ml: { xs: 1, md: 0 },
+                                    mt: { xs: 2, md: 5 },
+                                    mr: { xs: 2, md: 5 },
+                                    color: 'white',
+                                }}
                             >
                                 <b>- Set the duration of the poll (in hours)</b>
                             </Typography>
@@ -278,9 +293,21 @@ export default function Home() {
                 </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: { xs: 'column', md: 'row' },
+                    justifyContent: 'left',
+                    mt: { xs: 5, md: 15 },
+                }}
+            >
                 <Box
-                    sx={{ width: '40%', m: 5, ml: 10, mr: 20 }}
+                    sx={{
+                        width: { xs: '95%', md: '40%' },
+                        m: { xs: 2, md: 5 },
+                        ml: { xs: 2, md: 10 },
+                        mr: { xs: 2, md: 20 },
+                    }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
@@ -295,15 +322,15 @@ export default function Home() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '60px' },
-                                mr: 5,
-                                mt: 5,
-                                ml: 5,
+                                fontSize: { xs: '25px', md: '60px' },
+                                mr: { xs: 1, md: 5 },
+                                mt: { xs: 1, md: 5 },
+                                ml: { xs: 1, md: 5 },
                             }}
                         >
                             <b>2.</b>
                         </Typography>
-                        <Typography align='left' sx={{ mt: 5, fontSize: { xs: '100%', md: '25px' } }}>
+                        <Typography align='left' sx={{ mt: { xs: 2, md: 5 }, fontSize: { xs: '15px', md: '25px' } }}>
                             Server members react to the poll to indicate their availability.
                         </Typography>
                     </Box>
@@ -323,7 +350,7 @@ export default function Home() {
                     </Box>
                 </Box>
                 <Box
-                    sx={{ display: 'flex', justifyContent: 'center', p: 5 }}
+                    sx={{ display: 'flex', justifyContent: 'center', p: { xs: 1, md: 5 } }}
                     component={motion.div}
                     className='frosted'
                     initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
@@ -340,9 +367,21 @@ export default function Home() {
                 </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', justifyContent: 'left', mt: 15 }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: { xs: 'column', md: 'row' },
+                    justifyContent: 'left',
+                    mt: { xs: 2, md: 15 },
+                }}
+            >
                 <Box
-                    sx={{ width: '40%', m: 5, ml: 10, mr: 20 }}
+                    sx={{
+                        width: { xs: '95%', md: '40%' },
+                        m: { xs: 2, md: 5 },
+                        ml: { xs: 2, md: 10 },
+                        mr: { xs: 2, md: 20 },
+                    }}
                     component={motion.div}
                     className='statement'
                     initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
@@ -357,15 +396,15 @@ export default function Home() {
                         <Typography
                             className='statement'
                             sx={{
-                                fontSize: { xs: '100%', md: '60px' },
-                                mr: 5,
-                                mt: 5,
-                                ml: 5,
+                                fontSize: { xs: '25px', md: '60px' },
+                                mr: { xs: 1, md: 5 },
+                                mt: { xs: 1, md: 5 },
+                                ml: { xs: 1, md: 5 },
                             }}
                         >
                             <b>3.</b>
                         </Typography>
-                        <Typography align='left' sx={{ mt: 5, fontSize: { xs: '100%', md: '25px' } }}>
+                        <Typography align='left' sx={{ mt: { xs: 2, md: 5 }, fontSize: { xs: '15px', md: '25px' } }}>
                             The winning choice of your poll is automatically converted to an event for your discord
                             server. No extra work required!
                         </Typography>
@@ -386,7 +425,7 @@ export default function Home() {
                     </Box>
                 </Box>
                 <Box
-                    sx={{ display: 'flex', justifyContent: 'center', p: 5 }}
+                    sx={{ display: 'flex', justifyContent: 'center', p: { xs: 1, md: 5 } }}
                     component={motion.div}
                     className='frosted'
                     initial={{ x: '0%', y: '-10%', opacity: 0, scale: 1 }}
@@ -400,14 +439,14 @@ export default function Home() {
                     <Box sx={{}}>
                         <img className='eoImages' src='/eoeventcreation.jpg' />
                         <Box sx={{}}>
-                            <Typography align='left' sx={{ mt: 1, mb: 5, color: 'white' }}>
+                            <Typography align='left' sx={{ ml: { xs: 1, md: 0 }, mt: 1, mb: 5, color: 'white' }}>
                                 <b>The server is alerted to the event&apos;s creation</b>
                             </Typography>
                         </Box>
                         <img className='eoImages' src='/eoeventinserver.jpg' />
 
                         <Box sx={{}}>
-                            <Typography align='left' sx={{ mt: 1, mb: 2, color: 'white' }}>
+                            <Typography align='left' sx={{ ml: { xs: 1, md: 0 }, mt: 1, mb: 0, color: 'white' }}>
                                 <b>Checking the events tab shows the newly created event!</b>
                             </Typography>
                         </Box>
@@ -423,14 +462,28 @@ export default function Home() {
                     delay: 1.1,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}
-                sx={{ display: 'flex', justifyContent: 'center', mt: 15, mb: 10 }}
+                sx={{
+                    display: 'flex',
+                    flexDirection: { xs: 'column', md: 'row' },
+                    justifyContent: 'center',
+                    mt: 15,
+                    mb: 10,
+                }}
             >
-                <Box className='statement' sx={{ display: 'flex', justifyContent: 'center', fontSize: '40px' }}>
+                <Box
+                    className='statement'
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        fontSize: { xs: '25px', md: '40px' },
+                        mb: { xs: 3, md: 0 },
+                    }}
+                >
                     <i>
                         <b>Want To Get Started?</b>
                     </i>
                 </Box>
-                <Box sx={{ display: 'flex', alignItems: 'center', ml: 5 }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', ml: { xs: 0, md: 5 } }}>
                     <Button
                         href='https://eventorganizer.up.railway.app/setup'
                         color='secondary'
@@ -455,13 +508,36 @@ export default function Home() {
             >
                 <FooterLine />
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
-                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: { xs: 'column', md: 'row' },
+                    justifyContent: 'center',
+                    mt: { xs: 0, md: 3 },
+                }}
+            >
+                <Box
+                    className='footerText'
+                    sx={{
+                        display: 'flex',
+
+                        justifyContent: { xs: 'left', md: 'center' },
+                        width: { xs: '90%', md: '50%' },
+                        mb: { xs: 3, md: 0 },
+                    }}
+                >
                     <EmailIcon />
                     &nbsp;
                     <a href='mailto: nick.zaff@gmail.com'>Get In Contact</a>
                 </Box>
-                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                <Box
+                    className='footerText'
+                    sx={{
+                        display: 'flex',
+                        justifyContent: { xs: 'left', md: 'center' },
+                        width: { xs: '95%', md: '50%' },
+                    }}
+                >
                     <GitHubIcon />
                     &nbsp;GitHub:&nbsp;
                     <a href='https://github.com/Nick-Zafiropoulos/discord-event-organizer'>Event Organizer Repo</a>

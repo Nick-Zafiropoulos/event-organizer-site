@@ -13,7 +13,7 @@ export default function Docs() {
         <Box>
             <Box
                 className='backgroundClassDocs'
-                sx={{ height: { xs: '200vw', md: '100%' }, width: { xs: 'cover', md: '100%' }, p: { xs: 2, md: 10 } }}
+                sx={{ height: { xs: 'cover', md: '100%' }, width: { xs: '100vw', md: '100%' }, p: { xs: 2, md: 10 } }}
             >
                 <Box
                     component={motion.div}
@@ -52,16 +52,16 @@ export default function Docs() {
                     }}
                     component={motion.div}
                     className='frosted-docs'
-                    initial={{ x: '0%', y: '-30px', opacity: 0 }}
+                    initial={{ x: '0%', y: '-40px', opacity: 0 }}
                     animate={{ x: '0%', y: '0%', opacity: 1 }}
                     transition={{
-                        duration: 1,
+                        duration: 0.5,
                         delay: 0.3,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
                     <Box sx={{}}>
-                        <Typography align='left' sx={{ mt: 3, mr: 5, color: 'white' }}>
+                        <Typography align='left' sx={{ mt: { xs: 0, md: 3 }, mr: { xs: 2, md: 5 }, color: 'white' }}>
                             <i>
                                 This page documents how to use Event Organizer once it is running on your Discord
                                 server. For information on setting up the application to run on your server, please
@@ -166,18 +166,35 @@ export default function Docs() {
             <Box
                 sx={{
                     display: 'flex',
+                    flexDirection: { xs: 'column', md: 'row' },
                     justifyContent: 'center',
                     p: 3,
+
                     backgroundColor: 'black',
                     width: '100%',
                 }}
             >
-                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                <Box
+                    className='footerText'
+                    sx={{
+                        display: 'flex',
+                        justifyContent: { xs: 'left', md: 'center' },
+                        width: '50%',
+                        mb: { xs: 2, md: 0 },
+                    }}
+                >
                     <EmailIcon />
                     &nbsp;
                     <a href='mailto: nick.zaff@gmail.com'>Get In Contact</a>
                 </Box>
-                <Box className='footerText' sx={{ display: 'flex', justifyContent: 'center', width: '50%' }}>
+                <Box
+                    className='footerText'
+                    sx={{
+                        display: 'flex',
+                        justifyContent: { xs: 'left', md: 'center' },
+                        width: { xs: '90%', md: '50%' },
+                    }}
+                >
                     <GitHubIcon />
                     &nbsp;GitHub:&nbsp;
                     <a href='https://github.com/Nick-Zafiropoulos/discord-event-organizer'>Event Organizer Repo</a>
